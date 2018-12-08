@@ -32,40 +32,236 @@
     <![endif]-->
 
 </head>
+	<style type="text/css">
+		<style type="text/css">
+		body{
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		.main-content{
+			width: 100%;
+			height: 560px;
+			background-image: url(cover_plant.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+
+		.content-nav{
+			width: 1100px;
+			height: 110px;
+			margin: auto;
+
+		}
+
+		.logo-com{
+			height: 110px;
+			width: 110px;
+		}
+
+		.con-links{
+			height: 100%;
+			width: 260px;
+			display: inline;
+
+		}
+		.con-links a{
+			text-decoration: none;
+			font-family: 'Rubik', sans-serif;
+			color: white;
+			font-weight: bold;
+			font-size: 21px;
+			padding: 35px;
+			margin-left: 110px;
+			text-shadow: 1px 1px 1px #34433D;
+			
+		}
+
+		.con-links a:hover{
+			border-bottom: 3px solid white;
+			padding-bottom: 4px;
+		}
+
+		.con-center{
+			width: 600px;
+			height: 220px;
+			margin: auto;
+			margin-top: 100px;
+			text-align: center;
+			border-bottom: 2px solid white;
+		}
+
+		.con-center h1{
+			font-size: 130px;
+			color: white;
+			font-family: 'Titillium Web', sans-serif;
+			text-shadow: 3px 3px 10px black;
+			
+		}
+
+		.con-center h1 a{
+			text-decoration:none;
+			color: white;
+		}
+
+		.con-center h2{
+			font-size: 30px;
+			color: white;
+			text-shadow: 1px 1px 5px black;
+		}
+
+		.con-btn{
+			width: 520px;
+			height: 100px;
+			margin: auto;
+		}
+		.con-btn .btn{
+			margin: 18px;
+			box-shadow: 1px 1px 1px grey;
+			font-family: 'Rubik', sans-serif;
+			color: grey;
+		}
+
+		.footer-content{
+			height: 210px;
+			float: left;	
+		
+		}
+
+		.fc-1{
+			width: 60%;
+			background-color: #333333;
+		}
+
+		.fc-2{
+			width: 40%;
+			background-color: black;	
+		}
+
+	
+		.fc-li{
+			float: left;
+			padding: 30px;
+			color: white;
+
+
+		}
+
+		li{
+			list-style-type: none;
+			font-family: 'Rubik', sans-serif;
+			font-size: smaller;
+			padding-top: 4px;
+		}
+
+		.support{
+			display: block;
+			height: 22px;
+			width: 850px;
+			margin-top: 130px;
+			border-bottom: 0.5px solid white;
+
+		}
+
+		.pop{
+			font-family:  'Rubik', sans-serif;
+			font-size: smaller;
+			margin-top: 6px;
+
+		}
+		p{
+			font-family:  'Rubik', sans-serif;
+			font-size: smaller;
+			margin-left: 40px;
+			margin-top: 34px;
+		}
+
+		.fc-icon{
+			font-size: 55px;
+			padding-top: 0px;
+			padding-left: 50px;
+		}
+
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		.footer-content a:hover{
+			color: green;
+		}
+		.fc-icon p{
+			font-size: 15px;
+			margin-left: 0px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			text-align: center;
+		}
+
+		.navbar-main{
+			width: 100%;
+			height: 90px;
+			margin: auto;
+			padding-top: 15px;
+			background-color: black;
+		}
+
+		.navbar-nav{
+			margin-left: 10px;
+			margin-top: 6px;
+			font-family: 'Rubik', sans-serif;
+			
+		}
+		.card-body{
+			background-color: #1B573F;
+
+		}
+
+		.user-img{
+			width: 100%;
+			height: 100px;
+
+			margin: auto;
+		}
+
+		.user-img img{
+			height: 80px;
+			width: 80px;
+		}
+
+
+	
+
+
+	</style>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation" style="border-top-width: 0px; height: 96px;">
-        <div class="container topnav" style="max-height: 250px;">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header" >
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="#"> <img src="logo.png" style="max-width:90px; margin-top: -10px;" ><p style="text-align: center; font-size: 17.5px">realPharma</p></span></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right" style="margin-top: 17px; font-size: 20px;" >
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            
-        </div>
-        <!-- /.container -->
-    </nav>
+
+    <!-- <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="border-bottom: #00e8d6 3px solid; opacity: 0.8" id="navbar"> -->
+	<nav class="navbar navbar-expand-sm fixed-top navbar-main" style="opacity: 0.6;" ;id="navbar"; >
+		<div class="container">
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a href="#"><img src="logo.png" class="logo-com" style="max-height: 90px; max-width: 90px"></a>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto" >
+					<li class="nav-item con-links">
+						<a href="#">HOME</a>
+					</li>
+					<li class="nav-item con-links">
+						<a href="#">CONSUMER</a>
+					</li>
+					<li class="nav-item con-links">
+						<a href="#">REGISTER</a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>	
+
 
 
     <!-- Header -->
@@ -81,11 +277,11 @@
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="https://twitter.com/SBootstrap" class="btn btn-primary btn-lg" style="width: 100%" ><i class="fa fa-lock fa-fw"></i> <span class="network-name">Admin Panel</span></a>
+                                <a href="#" class="btn btn-primary btn-lg" style="width: 100%"><i class="fa fa-play fa-fw"></i> <span class="network-name">Play Store</span></a>
                             </li>
 
                             <li>
-                                <a href="https://twitter.com/SBootstrap" class="btn btn-primary btn-lg" style="width: 100%"><i class="fa fa-user fa-fw"></i> <span class="network-name">Check Medicine</span></a>
+                                <a href=#" class="btn btn-primary btn-lg" style="width: 100%"><i class="fa fa-user fa-fw"></i> <span class="network-name">Check Medicine</span></a>
                             </li>
                         </ul>
                     </div>
