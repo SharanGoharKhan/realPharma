@@ -1,13 +1,33 @@
-<div class="wrapper">
-    <div class="sidebar" data-color="danger" data-background-color="white" data-image="./assets/img/sidebar-1.jpg">
-        <app-sidebar></app-sidebar>
-        <div class="sidebar-background" style="background-image: url(./assets/img/sidebar-4.jpg)"></div>
-    </div>
-    <div class="main-panel">
-        <app-navbar></app-navbar>
-        <router-outlet></router-outlet>
-        <div *ngIf="isMaps('maps')">
-            <app-footer></app-footer>
+<div *ngIf="openLogin == false">
+    <div class="wrapper">
+        <div class="sidebar" data-color="danger" data-background-color="white" data-image="./assets/img/sidebar-1.jpg">
+            <app-sidebar></app-sidebar>
+            <div class="sidebar-background" style="background-image: url(./assets/img/sidebar-4.jpg)"></div>
+        </div>
+        <div class="main-panel">
+            <app-navbar></app-navbar>
+            <router-outlet></router-outlet>
+            <div *ngIf="isMaps('maps')">
+                <app-footer></app-footer>
+            </div>
         </div>
     </div>
+</div>
+<div *ngIf="openLogin == true">
+        <div class="login-page">
+                <div class="form">
+                  <form class="register-form">
+                    <input type="text" placeholder="name"/>
+                    <input type="password" placeholder="password"/>
+                    <input type="text" placeholder="email address"/>
+                    <button>create</button>
+                    <p class="message">Already registered? <a href="#">Sign In</a></p>
+                  </form>
+                  <form class="login-form">
+                    <input type="text" placeholder="username"/>
+                    <input type="password" placeholder="password"/>
+                    <button (click)="onLogin()">login</button>
+                  </form>
+                </div>
+              </div>
 </div>
