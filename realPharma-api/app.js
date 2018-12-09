@@ -35,7 +35,7 @@ app.use(methodOverride("_method"));
 app.use(flash());
 //app.use(favicon(__dirname + '/public/img/landing/favicon.png'));
 // app.use('/favicon.png', express.static('/img/landing/favicon.png'));
-app.use(favicon(path.join(__dirname,'public','img', 'landing' ,'fevicon.png')));
+//app.use(favicon(path.join(__dirname,'public','img', 'landing' ,'fevicon.png')));
 
 
 
