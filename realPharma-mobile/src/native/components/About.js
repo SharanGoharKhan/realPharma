@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Container, Content, Text, H1, Label
+  Container, Content, Text, H1, Label, Input
 } from 'native-base';
 import { TextInput, Button } from 'react-native';
 import Spacer from './Spacer';
@@ -56,9 +56,8 @@ class About extends React.Component {
           </H1>
           <Spacer size={10} />
           <Label>Type Hex Id here</Label>
-          <TextInput
+          <Input
             onChangeText={v => this.handleChange(v)}
-            style={{ height: 40 }}
           />
           <Spacer size={10} />
           <Button

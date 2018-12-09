@@ -41,7 +41,7 @@ const Index = (
       >
         <Stack
           key="home"
-          title={AppConfig.appName.toUpperCase()}
+          title="Check Medicine"
           // icon={() => <Icon name="planet" {...DefaultProps.icons} />}
           {...DefaultProps.navbarProps}
         >
@@ -50,7 +50,7 @@ const Index = (
 
         <Stack
           key="recipes"
-          title="RECIPES"
+          title="About realPharma"
           // icon={() => <Icon name="book" {...DefaultProps.icons} />}
           {...DefaultProps.navbarProps}
         >
