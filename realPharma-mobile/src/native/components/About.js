@@ -27,7 +27,7 @@ class About extends React.Component {
     })
   }
   handleSubmit = () => {
-    if (this.state.hex == '7869db6a7a1e4d4') {
+    if (this.state.hex == '7869dba7a1e4d4') {
       alert(`Medicine name: Amoxicillim \n Status: Real`)
       this.setState({
         report: false
